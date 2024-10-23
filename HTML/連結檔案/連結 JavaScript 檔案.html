@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>MyPage</title>
+    <script src="../javascript/page4.js"></script>
+    <!-- 連結 JavaScript 檔案 -->
+</head>
+
+<body>
+
+    <h1> Hello,Javascript </h1>
+    <p id="welcome"> hihi</p>
+    <!--點選按鈕時呼叫function()-->
+    <button onclick="myFunction()">改變文字</button>
+
+</body>
+
+</html>
+
+
+Script 程式碼
+function myFunction() {
+document.getElementById("welcome").innerHTML = "hi,hello";
+}

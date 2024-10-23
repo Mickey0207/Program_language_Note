@@ -1,0 +1,36 @@
+<html>
+
+<body>
+
+    <p id="demo"></p>
+
+
+    <script>
+
+        menu = ["最新消息", "產品資訊", "聯絡資訊", "關於我們"];
+
+
+        menu_html = "<ul>";
+
+        menu_html +=
+
+& nbsp; & nbsp; & nbsp; & nbsp; "<li>" + menu[0] + "</li>" +
+
+& nbsp; & nbsp; "<li>" + menu[1] + "</li>" +
+
+& nbsp; & nbsp; "<li>" + menu[2] + "</li>" +
+
+& nbsp; & nbsp; "<li>" + menu[3] + "</li>";
+
+        menu_html += "</ul>";
+
+
+        console.log(menu_html);
+
+        document.getElementById("demo").innerHTML = menu_html;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>
+        表單
+    </title>
+</head>
+
+<body>
+    <form id="abc" method="get/post" action="abc.py" enctype="multipart/form-data"> <!-- 表單開始 -->
+        <!--
+                id="abc"    
+                表單的名稱，不重複命名，
+                通常在javascript呼叫的時候會使用，如果未使用到可以省略
+                
+                method="get/post"
+                方法method= 最常使用的方式(GET、POST)
+                GET在網頁url上送資料，大家都可以看到(適合較一般類型的資料)
+                POST如果資料是需要隱密的，例如密碼資訊等，這時候就要選擇POST傳輸
+                
+                action="abc.py"
+                按下submit 時表單要送到的後端處理頁面
+                
+                enctype="multipart/form-data"
+                如果你的檔案需要上傳多媒體(例如圖片、音檔)等，需要加入此行
+                
+            -->
+    </form> <!-- 表單結束 -->
+</body>
+
+</html>

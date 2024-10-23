@@ -1,0 +1,59 @@
+上傳檔案需加這行
+enctype="multipart/form-data"
+
+<html>
+
+<head>
+    <title>
+        表單
+    </title>
+</head>
+
+<body>
+    <form> <!-- 表單開始 -->
+        帳號:<input type="text" size="50" maxlength="10" placeholder="請輸入姓名" value="AAA" enctype="multipart/form-data">
+        <!-- 
+                size="50"                   格子大小
+                maxlength="10"              輸入最大值
+                placeholder="請輸入姓名"     提示文字
+                value="AAA"                 預設文字
+                type =  "text"              text = 輸入文字
+                        "password"          password = 輸入隱碼
+                        "submit"            submit = 送出按鈕
+                        "email"             email = E-mail檢查
+                        "color"             color = 選擇顏色
+                        "number"            number = 選擇數量
+                        "date"              date = 預設日期
+                        "time"              time = 預設時間
+                        "datetime-local"    datetime-local = 預設日期加時間
+                        "file"              file = 上傳檔案
+                        "radio"             radio = 單選題
+                        "checkbox"          checkbox = 複選
+                name = "user_num"           傳至後端的變數名稱
+                required                    必填欄位
+                readonly                    唯讀
+                disabled                    無法點擊
+            -->
+        *姓名:<input type="text" name="username" size="50" maxlength="10" placeholder="請輸入姓名" required><br>
+        帳號:<input type="text" name="user_acc" value="AAA"><br>
+        密碼:<input type="password" name="user_pwd" required><br>
+        編號:<input type="text" name="user_num" value="s202104071" readonly><br>
+        員工代號:<input type="text" name="user_n2" value="CCC" disabled><br>
+        E-mail: <input type="email" name="user_email">
+        數量:<input type="number" min="1" max="5" value="1"><br><br>
+        <!--min="最小值" max="最大值"-->
+        顏色:<input type="color" value="#ff0000"><br><br>
+        年月日<input type="date" name="my_date">
+        時間:<input type="time" name="my_time">
+        日期、時間:<input type="datetime-local" name="my_datetime">
+        請上傳圖片:<input type="file" name="my_pic" accept=".png,.jpg,.gif"><br>
+        <!--accept 限定黨檔案類型-->
+        請上傳檔案:<input type="file" name="my_file[]"><br>
+        <!--用陣列方式儲存-->
+        <input type="radio" name="gender" value="1">男 /
+        <input type="radio" name="gender" value="2">女</br>
+        <input type="checkbox" value="1" name="info[]">HTML<br>
+    </form> <!-- 表單結束 -->
+</body>
+
+</html>

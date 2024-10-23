@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>MyPage</title>
+</head>
+
+<body>
+
+    <h2>Hello,Javascript</h2>
+    <p id="welcome">HI</p>
+    <!-- 把 P 標籤命名為 welcome -->
+
+</body>
+
+<script>
+    document.getElementById("welcome").innerHTML = "Hi,Hello";
+    <!-- 把上面 HI 重新命名為 Hi,Hello -->
+</script>
+
+</html>
+
+按下按鈕
+
+<html>
+
+<head>
+    <title>MyPage</title>
+</head>
+
+<body>
+
+    <h2>Hello</h2>
+
+    <p id="welcome">HI,JS.</p>
+    <!-- 把 P 標籤命名為 welcome
+	並設定顯示文字是 HI,JS -->
+
+    <button onclick="document.getElementById('welcome').innerHTML = 'Hello JavaScript!'">Click Me!
+        <!-- 按下按鈕後把上面 welcome 中的文字重新設定為 Hello JavaScript!
+	按鈕上的文字是 Click Me!-->
+
+    </button>
+
+</body>
+
+</html>
